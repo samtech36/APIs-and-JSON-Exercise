@@ -22,9 +22,6 @@ namespace APIsAndJSON
             var parsedResult = JObject.Parse(result);
             
             
-            
-            
-            
             var temp = double.Parse(JObject.Parse(result)["main"]["temp"].ToString());
             var humidity= int.Parse(JObject.Parse(result)["main"]["humidity"].ToString());
             var windSpeed = double.Parse(JObject.Parse(result)["wind"]["speed"].ToString());
